@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> 
+  <title>JQuery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    * {      
+      font-family: 'Roboto';
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input id="name" type="text" name="name">
+    <button id="btn">Show Name</button>
+  </div>
+  <div id="box" class="container">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Placeat, enim! Porro, soluta sequi ipsam doloremque quaerat vel laudantium ut magnam optio quia voluptas laborum ullam veritatis quam aperiam dolorem minus aliquam! Sint adipisci soluta beatae, blanditiis sunt numquam ratione dolores dicta earum ad. Ex exercitationem, iusto libero corrupti, aut ullam cumque, iste officia nisi quisquam asperiores? Illo amet voluptates consectetur. Ab exercitationem esse rerum sequi id numquam, cupiditate ullam optio sapiente veniam ex culpa in cumque placeat voluptatum? Officia eius consequuntur natus adipisci ipsam veniam aspernatur cum voluptatem debitis aperiam eos, voluptas doloribus molestias! Obcaecati doloribus tempora cum dolores voluptatum unde facere eos ipsam mollitia consectetur amet enim animi autem et, adipisci nostrum illum. Consequatur praesentium alias eos nostrum cupiditate neque sit non ipsum inventore amet. Aliquam, facere laborum nobis voluptas, dolorum sequi debitis sint adipisci, et maiores eos libero quasi ab consequuntur sapiente officiis cum. Ducimus ipsum perspiciatis facilis, optio pariatur perferendis odio sunt ullam doloremque numquam? Eius quidem iusto deleniti voluptatum nostrum sit nesciunt inventore voluptatibus, labore dolores necessitatibus neque tenetur in harum omnis sint expedita odio perspiciatis ullam magni aut dolor asperiores, recusandae fuga! Distinctio tempora cum modi, excepturi saepe mollitia doloremque sint assumenda rem ut porro, non atque a quis quibusdam inventore odit debitis? Quia animi enim ipsum fugit perspiciatis culpa error ullam vitae, dicta maiores repudiandae dolorum beatae veritatis ducimus at quidem dolores! Provident tenetur odio laudantium assumenda non sequi praesentium, debitis expedita unde quia optio consectetur voluptatibus voluptatum! Doloribus distinctio debitis veniam asperiores provident aliquid eius quibusdam ad possimus, velit facilis quasi sequi delectus, voluptas qui illo tempora mollitia natus sit. Dignissimos, sit qui. Laboriosam, accusamus! Necessitatibus nesciunt, repellendus iure itaque ex earum debitis quas voluptatum quo quam consequuntur illum adipisci quibusdam, maiores sit ratione facilis corporis, ipsum odio deserunt temporibus aperiam enim praesentium.</p>
+  </div>
+  <script>
+    $(document).ready(function(){
+      // const html = $('#box').html()
+      // console.log(html)
+
+      // const text = $('#box').text()
+      // console.log(text)
+
+      // const attributes = $('#box').attr('id')
+      // console.log(attributes)   
+      
+      $('#btn').click(function(){
+        const name = $('#name').val()
+        alert(name)
+      })
+    })
+  </script>
+</body>
+</html>

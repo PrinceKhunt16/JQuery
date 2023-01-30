@@ -23,14 +23,89 @@
   </style>
 </head>
 <body>
-  <div id="box" class="container">
+  <!-- On Off methods -->
+
+  <!-- <div id="box">
     <h2>Box</h2>
     <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
   </div>
-  <button id="btn">Remove event</button>
+  <button id="btn">Remove event</button> -->
+  
+
+  <!-- Append Prepend methods -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="append-btn">Append</button>
+  <button id="prepend-btn">Prepend</button> -->
+
+
+  <!-- After Before methods -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="after-btn">After</button>
+  <button id="before-btn">Before</button> -->
+
+
+  <!-- Empty Remove methods -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="empty-btn">Empty</button>
+  <button id="remove-btn">Remove</button> -->
+
+
+  <!-- AppendTo PrependTo methods -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="appendto-btn">AppendTo</button>
+  <button id="prependto-btn">PrependTo</button> -->
+
+
+  <!-- Clone method -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <div id="empty-box"></div>
+  <button id="clone-btn">Clone</button> -->
+
+
+  <!-- ReplaceWith ReplaceAll methods -->
+
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="replacewith-btn">ReplaceWith</button>
+  <button id="replaceall-btn">ReplaceAll</button> -->
+
+
+  <!-- Wrap Unwrap methods -->
+  <!-- <div id="box">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="wrap-btn">Wrap</button>  
+  <button id="unwrap-btn">Unwrap</button>   -->
+
   <script>
     $(document).ready(function(){
       // On method
+
       // $('#box').on('click', function(){
       //   $(this).css({'background': '#000', 'color': '#fff'})
       // })
@@ -39,22 +114,96 @@
       //   $(this).toggleClass('bg-black text-white')
       // })
 
-      $('#box').on({
-        'click': function(){
-          $(this).css({'background': '#000', 'color': '#fff'})
-        }, 
-        'mouseover': function(){
-          $(this).toggleClass('bg-black text-white')
-        },
-        'mouseout': function(){
-          $(this).toggleClass('bg-black text-white')
-        }
-      })
+      // $('#box').on({
+      //   'click': function(){
+      //     $(this).css({'background': '#000', 'color': '#fff'})
+      //   }, 
+      //   'mouseover': function(){
+      //     $(this).toggleClass('bg-black text-white')
+      //   },
+      //   'mouseout': function(){
+      //     $(this).toggleClass('bg-black text-white')
+      //   }
+      // })
 
       // Off method
-      $('#btn').click(function(){
-        $('#box').off('mouseover mouseout click')
-      })
+
+      // $('#btn').click(function(){
+      //   $('#box').off('mouseover mouseout click')
+      // })
+
+
+      // Append Prepend methods
+
+      // $('#append-btn').click(function(){
+      //   $('#box').append('<h2>John Doe</h2>')
+      // })
+
+      // $('#prepend-btn').click(function(){
+      //   $('#box').prepend('<h2>John Doe</h2>')
+      // })
+
+
+      // After Before methods
+
+      // $('#after-btn').click(function(){
+      //   $('#box').after('<h2>John Doe</h2>')
+      // })
+
+      // $('#before-btn').click(function(){
+      //   $('#box').before('<h2>John Doe</h2>')
+      // })
+
+      
+      // Empty Remove methods
+
+      // $('#empty-btn').click(function(){
+      //   $('#box').empty()
+      // })
+
+      // $('#remove-btn').click(function(){
+      //   $('#box').remove()
+      // })
+
+      
+      // AppendTo PrependTo methods
+
+      // $('#appendto-btn').click(function(){
+      //   $('<h2>John Doe</h2>').appendTo('#box')
+      // })
+
+      // $('#prependto-btn').click(function(){
+      //   $('<h2>John Doe</h2>').prependTo('#box')
+      // })
+
+
+      // Clone method
+
+      // $('#clone-btn').click(function(){
+      //   $('#box').clone().appendTo('#empty-box')
+      // })
+
+
+      // ReplaceWith ReplaceAll method
+
+      // $('#replacewith-btn').click(function(){
+      //   $('#box p:nth-child(3)').replaceWith('<p>John Doe</p>')
+      // })
+
+      // $('#replaceall-btn').click(function(){
+      //   $('<p>John Doe</p>').replaceAll('#box p')
+      // })
+
+
+      // Wrap Unwrap methods
+
+      // $('#wrap-btn').click(function(){
+      //   $('#box p').wrap('<div></div>')
+      // })
+
+      // $('#unwrap-btn').click(function(){
+      //   $('#box p').unwrap()
+      // })
     })
   </script>
 </body>

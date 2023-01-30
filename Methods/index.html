@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> 
+  <title>JQuery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    * {      
+      font-family: 'Roboto';
+    }
+
+    .bg-black {
+      background: #000;
+    }
+
+    .text-white {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="box" class="container">
+    <h2>Box</h2>
+    <p>Dolor sit amet consectetur adipisicing elit. Hic, asperiores aspernatur voluptatum corrupti, pariatur id exercitationem natus officiis, sapiente aliquam repudiandae odio! Aperiam facilis explicabo omnis, quos repudiandae quae animi?</p>
+  </div>
+  <button id="btn">Remove event</button>
+  <script>
+    $(document).ready(function(){
+      // On method
+      // $('#box').on('click', function(){
+      //   $(this).css({'background': '#000', 'color': '#fff'})
+      // })
+
+      // $('#box').on('mouseover mouseout', function(){
+      //   $(this).toggleClass('bg-black text-white')
+      // })
+
+      $('#box').on({
+        'click': function(){
+          $(this).css({'background': '#000', 'color': '#fff'})
+        }, 
+        'mouseover': function(){
+          $(this).toggleClass('bg-black text-white')
+        },
+        'mouseout': function(){
+          $(this).toggleClass('bg-black text-white')
+        }
+      })
+
+      // Off method
+      $('#btn').click(function(){
+        $('#box').off('mouseover mouseout click')
+      })
+    })
+  </script>
+</body>
+</html>
